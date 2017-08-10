@@ -114,6 +114,7 @@ public class World{
     }
     
     //引数のActorと重なっているActorがないか判定し、重なっているActorをリストにして返す　引数にクラスを渡すとそのクラスのみ判定する
+    @SuppressWarnings("unchecked")
     public <T> java.util.List<T> OverLapListForClass(java.lang.Class<T> cls, Actor actor) {
 
         if (cls == null) {
